@@ -12,7 +12,7 @@ table.columns = {
 };
 
 
-table.dynamicSchema = false;
+table.dynamicSchema = true;
 
 /*
  *   Trigger para insert
