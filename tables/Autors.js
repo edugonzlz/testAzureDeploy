@@ -21,13 +21,13 @@ table.dynamicSchema = true;
 
 table.insert(function (context) {
 
-    context.item.usuario = context.user.id;
+    // context.item.usuario = context.user.id;
     return context.execute();
 });
 
 
 table.read(function (context) {
-    context.query.where({usuario : context.user.id});
+    // context.query.where({usuario : context.user.id});
     return context.execute();
 });
 
