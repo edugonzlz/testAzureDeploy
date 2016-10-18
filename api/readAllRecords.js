@@ -14,7 +14,7 @@ var api = {
         var user = context.user.id;
 
         var query = {
-            sql: "Select * FROM Autors"
+            sql: "Select * FROM Authors"
         };
 
         req.azureMobile.data.execute(query)
