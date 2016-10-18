@@ -21,13 +21,13 @@ table.dynamicSchema = true;
 
 table.insert(function (context) {
 
-    // context.item.usuario = context.user.id;
+    context.item.usuario = context.user.id;
     return context.execute();
 });
 
 
 table.read(function (context) {
-    // context.query.where({usuario : context.user.id});
+    context.query.where({usuario : context.user.id});
     return context.execute();
 });
 
@@ -40,7 +40,7 @@ table.read(function (context) {
 table.read.access = 'anonymous';
 table.update.access = 'authenticated';
 table.delete.access = 'authenticated';
-table.insert.access = 'authenticated';
+table.insert.access = 'anonymous';
 
 
 module.exports = table;
